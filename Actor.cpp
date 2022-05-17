@@ -5,10 +5,19 @@ AActor::AActor()
 	Shape = ' ';
 	Location.X = 0;
 	Location.Y = 0;
-	bCollide = false;
+	Hp = 100;
 }
 
 AActor::~AActor()
+{
+}
+
+
+void AActor::Move()
+{
+}
+
+void AActor::Attack()
 {
 }
 

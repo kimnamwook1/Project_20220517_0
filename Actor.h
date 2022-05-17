@@ -1,16 +1,19 @@
 #pragma once
-#include <Vector2D>
+#include "Vector2D.h"
 
 class AActor
 {
 public:
 	AActor();
-	~AActor(); //¼Ò¸êÀÚ
+	~AActor(); 
 
 	char Shape;
 	Vector2D Location;
-	bool bCollide;
+	int Hp;
+	int Gold;
 
+	void Move();
+	void Attack();
 	void Draw();
 };
 
